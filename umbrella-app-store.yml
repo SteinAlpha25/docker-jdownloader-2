@@ -1,0 +1,11 @@
+id: jdownloader2
+name: JDownloader 2
+description: "JDownloader 2 é um gerenciador de downloads de código aberto para baixar arquivos de vários serviços."
+version: "2.x"
+docker_image: "jlesage/jdownloader-2"
+ports:
+  - "5900:5900"  # Porta VNC, se precisar acessar a interface gráfica.
+volumes:
+  - /path/to/downloads:/downloads  # Defina onde os downloads serão salvos.
+environment:
+  - VNC_PASSWORD=password  # Senha para o VNC.
